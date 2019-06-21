@@ -8021,6 +8021,11 @@ react-speech-recognition@^2.0.1:
   resolved "https://registry.yarnpkg.com/react-speech-recognition/-/react-speech-recognition-2.0.1.tgz#ffa7a713468bb60b52ce43d2f0f853993e2d1057"
   integrity sha512-1KloNSBTKn3gRkbJ7Fy19/sKILS5BitX/MsIqsnI9lXadEooLzutdrgpDBKK7dLKJ9UnOhbW3lCIpQm561GyPw==
 
+react-timer-hook@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/react-timer-hook/-/react-timer-hook-1.1.6.tgz#e04b28687241d95e96712d8b0651b1387087ab05"
+  integrity sha512-o1+z4IwtpkI6WL5cA4UQ01EimOYQv61wmRScSoJmh9w3meYUk4MwZnG/p1IHwECLUjmPJc7kuI19OFTQLX1h3A==
+
 react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"

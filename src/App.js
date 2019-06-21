@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import SpeechRecognition from "react-speech-recognition";
+import MyStopwatch from "./Stopwatch";
 
 const startState = 'start'
 const playingState ='play'
@@ -75,7 +76,7 @@ const Dictaphone = ({
     if(transcript.includes('start')){
       setPlayState(playingState)
     }
-    return <div> <p> Say Start to begin </p> <button onClick={()=>setPlayState(playingState)}> Start </button></div>
+    return <div> <MyStopwatch></MyStopwatch> <p> Say Start to begin </p> <button onClick={()=>setPlayState(playingState)}> Start </button></div>
   }
   if(countryNumber===numberOfCountries-1){
 
