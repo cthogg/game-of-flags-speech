@@ -17,14 +17,23 @@ const Dictaphone = ({
   if (!browserSupportsSpeechRecognition) {
     return null;
   }
-  if(transcript.includes('Brazil')){
-    alert('correct')
+  const transcriptArray =transcript.split(' ')
+  const lastWordSpoken = transcriptArray[transcriptArray.length -1]
+  let correct = false
+  if(lastWordSpoken.includes('Brazil')){
+    correct = true
   }
+
 
   return (
     <div>
+      {correct===true && <p> Correct </p>}
+      {correct===false && <p> Wrong!</p>}
+
       <button onClick={resetTranscript}>Reset</button>
       <span>{transcript}</span>
+      <p> Say the country</p>
+      <p>🇧🇷</p>
     </div>
   );
 };
