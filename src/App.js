@@ -17,6 +17,9 @@ const Dictaphone = ({
   if (!browserSupportsSpeechRecognition) {
     return null;
   }
+  if(transcript.includes('Brazil')){
+    alert('correct')
+  }
 
   return (
     <div>
