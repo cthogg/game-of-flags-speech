@@ -77,7 +77,7 @@ const Dictaphone = ({
             {" "}
             Say Start to begin{" "}
           </h1>{" "}
-          <p> Uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API"> Web Speech api  </a>so only works on modern versions of Chroms</p>
+          <p> Uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API"> Web Speech api  </a>so only works on modern versions of Chrome</p>
         </div>
       );
     }
