@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/game-of-flags-speech/precache-manifest.51039fecd79d5450ca1f7c37cbbb76ca.js"
+  "/game-of-flags-speech/precache-manifest.0eccd2328fa0aefdc0149b542996c9aa.js"
 );
 
 self.addEventListener('message', (event) => {
