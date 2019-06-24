@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import SpeechRecognition from "react-speech-recognition";
-import { countries } from "./countries";
+import { countries } from "./countriesEasy";
 import "./App.sass";
 const startState = "start";
 const playingState = "play";
@@ -24,7 +24,6 @@ const Dictaphone = ({
   const [countryNumber, setCountryNumber] = useState(0);
   const [lastRightWrong, setLastRightWrong] = useState(false);
   const [lastCorrectAnswer, setLastCorrectAnswer] = useState("");
-  const [numberOfQuestions, setNumberOfQuestions] = useState(0);
   const [skippedAnswers, setSkippedAnswers] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
@@ -55,14 +54,13 @@ const Dictaphone = ({
       return (
         <div>
           {" "}
-          <h1 className={"is-size-2"}> Game of Flags </h1>{" "}
+          <h1 className={"is-size-2"}> Game of Flags </h1>
+
           <h1 className={"is-size-3"}>
             {" "}
             {`Rules:`}
-            <ol>
-              <li>1. Say the name of the country</li>
-              <li>2. If you do not know the name say {passWord}</li>
-            </ol>
+              <p>1. Say the name of the country</p>
+              <p>2. If you do not know the name say {passWord}</p>
           </h1>{" "}
           <h1 className={"is-size-1 has-text-weight-bold"}>
             {" "}
@@ -82,8 +80,8 @@ const Dictaphone = ({
         setCountryNumber(0);
       }
       return (
-        <div>
-          <p className={"is-size-2"}> End of quiz</p>{" "}
+        <div className={'is-size-2'} >
+          <p > Finish! </p>{" "}
           <p> {correctAnswers} correct</p>
           <p> {skippedAnswers} skipped</p>
           <p className={"is-size-1 has-text-weight-bold"}>
@@ -128,7 +126,8 @@ const Dictaphone = ({
 
   return (
     <div className="columns">
-      <div className={`column is-half has-text-centered`}>
+          <div className={`column is-one-fifth`}> <p></p></div>
+      <div className={`column `}>
         <CentreColumn> </CentreColumn>
       </div>
     </div>
