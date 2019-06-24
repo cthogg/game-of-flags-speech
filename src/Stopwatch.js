@@ -8,12 +8,9 @@ function MyStopwatch() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <div style={{ fontSize: "100px" }}>
+      <div className={'is-size-3'}>
         <span>{minutes}min</span>:<span>{seconds}s</span>
       </div>
-      <button onClick={start}>Start</button>
-      <button onClick={pause}>Pause</button>
-      <button onClick={reset}>Reset</button>
     </div>
   );
 }
