@@ -7,6 +7,17 @@ const startState = "start";
 const playingState = "play";
 const passWord = "skip";
 
+const Footer = () =>
+  (    <footer className="footer">
+  <div class="content ">
+    <p>
+      Created by <a href="https://chrishogg.net/">Chris Hogg </a>. Source code on 
+      <a href="https://github.com/cthogg/game-of-flags-speech"> Github</a>
+    </p>
+  </div>
+</footer>)
+
+
 const propTypes = {
   // Props injected by SpeechRecognition
   transcript: PropTypes.string,
@@ -66,6 +77,7 @@ const Dictaphone = ({
             {" "}
             Say Start to begin{" "}
           </h1>{" "}
+          <p> Uses the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API"> Web Speech api  </a>so only works on modern versions of Chroms</p>
         </div>
       );
     }
@@ -125,11 +137,17 @@ const Dictaphone = ({
   };
 
   return (
+    <div> 
+          <div className="columns">
+</div>
+          <Footer></Footer>
+
     <div className="columns">
           <div className={`column is-one-fifth`}> <p></p></div>
       <div className={`column `}>
         <CentreColumn> </CentreColumn>
       </div>
+    </div>
     </div>
   );
 };
